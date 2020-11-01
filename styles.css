@@ -1,12 +1,16 @@
- #page-top{
-    background-color: #457b9d;
+@import url('https://fonts.googleapis.com/css?family=Lato|Quicksand');
+
+#page-top{
+    background-color: rgb(69, 123, 157);
     width: 100%;
 }
 
 .navbar-brand {
     font-size: 33px;
-    color: #00a896;
+    font-family: 'Quicksand', sans-serif;
+    color: #02dab6;
     padding-top:23px;
+    
 }
 
 .navbar-brand:hover{
@@ -24,37 +28,78 @@
     color: #fff1e6;
     padding: 1rem;
     font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .navbar-nav>li>a:hover{
-    color:#00a896;
+    color: #02dab6;
     text-decoration: none;
 }
 
+#mainNav{
+    position: fixed;
+    background-color:rgb(69, 123, 157);
+    width: 100%;
+    padding-bottom: 20px;
+}
+
 #masthead {
-    height: 100%;
-    background-color: #457b9d;
+	height: 100%;
+	background: linear-gradient( rgba(69, 123, 157, 0.9), rgba(69, 123, 157, 0.9)), url(../Portfolio/PortfolioAssets/mountain.jpg);
+	background-position-x: center;
+	background-position-y: center;
+	background-size: cover;
+	background-attachment: scroll;
+	background-origin: initial, initial;
+	background-clip: initial, initial;
+	background-color: initial;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover
 }
 
 .h2, h2 {
     font-size: 70px;
-    color: #fff1e6
+    color: #fff1e6;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 10px;
+
 }
 
 .h3, h3{
     font-size: 24px;
+    font-weight: bold;
     color:#00a896;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 181px;
+    padding-top: 10px;
 }
 
-.h1, .h2, .h3, h1, h2, h3 {
-    margin-top: 100px;
-    margin-bottom: -100px;
+#masthead .container .section-heading .accent {
+    color: #00a896;
 }
 
-.section-subheading {
-    padding-top: 5px;
+#masthead .intro-text {
+	padding-top: 400px;
 }
-#about .container{
+
+#masthead .container .section-heading {
+	font-size: 75px;
+}
+
+
+#about {
+    padding-bottom: 0;
     background-color: #fff1e6;
-    width: 100%;
+}
+
+#about .container .section-heading {
+	font-size: 4em;
+	color: #00a896;
+	padding-bottom: 15px;
+    margin-bottom: 0;
 }
