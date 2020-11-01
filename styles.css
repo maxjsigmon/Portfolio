@@ -37,10 +37,11 @@
 }
 
 #mainNav{
-    position: fixed;
+    position: fixed; 
     background-color:rgb(69, 123, 157);
     width: 100%;
     padding-bottom: 20px;
+    z-index: 100;
 }
 
 #masthead {
@@ -66,17 +67,14 @@
     font-size: 70px;
     color: #fff1e6;
     font-family: 'Quicksand', sans-serif;
-    padding-bottom: 10px;
-
 }
 
-.h3, h3{
+#masthead .container .row .intro-text .col .h3, h3{
     font-size: 24px;
     font-weight: bold;
     color:#00a896;
     font-family: 'Quicksand', sans-serif;
-    padding-bottom: 181px;
-    padding-top: 10px;
+    padding-bottom: 87px;
 }
 
 #masthead .container .section-heading .accent {
@@ -88,9 +86,11 @@
 }
 
 #masthead .container .section-heading {
-	font-size: 75px;
+    font-size: 75px;
+    margin-bottom: -20px;
 }
 
+/* ABOUT */
 
 #about {
     padding-bottom: 0;
@@ -99,6 +99,71 @@
 
 #about .container .section-heading {
 	font-size: 4em;
+	color: #00a896;
+	padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+#about .container p {
+    font-size: 1.5em;
+}
+
+/* Skills */
+
+#skills{
+    background-color: rgb(69, 123, 157);
+}
+
+#skills .container .section-heading{
+    font-size: 4em;
+	color: #00a896;
+	padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+/* Portfolio */
+
+#portfolio{
+  background-color: #fff1e6;  
+}
+
+#portfolio .container .section-heading{
+    font-size: 4em;
+	color: #00a896;
+	padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+.portfolio-caption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.portfolio-caption h4 {
+    color: #00a896;
+}
+
+.portfolio-image {
+	position: relative;
+    width: 100%;
+    
+  }
+
+  .portfolio-image img {
+	display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+/* Contact */
+
+#contact{
+    background-color: rgb(69, 123, 157);
+}
+
+#contact .container .section-heading{
+    font-size: 4em;
 	color: #00a896;
 	padding-bottom: 15px;
     margin-bottom: 0;
