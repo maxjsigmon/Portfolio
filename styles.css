@@ -71,10 +71,10 @@
 
 #masthead .container .row .intro-text .col .h3, h3{
     font-size: 24px;
-    font-weight: bold;
-    color:#00a896;
+    color:#fff1e6;
     font-family: 'Quicksand', sans-serif;
     padding-bottom: 87px;
+    padding-left: 4px;
 }
 
 #masthead .container .section-heading .accent {
@@ -106,6 +106,7 @@
 
 #about .container p {
     font-size: 1.5em;
+    line-height: 1.75;
 }
 
 /* Skills */
@@ -116,10 +117,27 @@
 
 #skills .container .section-heading{
     font-size: 4em;
-	color: #00a896;
+	color:#fff1e6;
 	padding-bottom: 15px;
     margin-bottom: 0;
 }
+
+.skills-caption{
+    color: #fff1e6;
+    margin-top: 10px;
+}
+
+.skills-image{
+    position: relative;
+    width: 100%;
+}
+.skills-image img{
+    display: block;
+    width: 200px;
+    height: 200px;
+
+}
+
 
 /* Portfolio */
 
@@ -136,11 +154,11 @@
 
 .portfolio-caption {
     margin-top: 10px;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .portfolio-caption h4 {
-    color: #00a896;
+    color:#00a896
 }
 
 .portfolio-image {
@@ -164,11 +182,24 @@
 
 #contact .container .section-heading{
     font-size: 4em;
-	color: #00a896;
+	color: #fff1e6;
 	padding-bottom: 15px;
     margin-bottom: 0;
+    
 }
 
 .resume-file{
     text-align: center;
+    
+}
+.resume-file a h3{
+    color:#fff1e6;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.footer p {
+    text-align: center;
+    color:#fff1e6;
+    font-family: 'Quicksand', sans-serif;
 }
