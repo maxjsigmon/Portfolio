@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Quicksand');
 
+body {
+    height: 100%;
+}
+
 #page-top{
     background-color: rgb(69, 123, 157);
     width: 100%;
@@ -45,9 +49,9 @@
 }
 
 #masthead {
-	height: 100%;
+	height: 100vh;
 	background: linear-gradient( rgba(69, 123, 157, 0.9), rgba(69, 123, 157, 0.9)), url(../Portfolio/PortfolioAssets/mountain.jpg);
-	background-position-x: center;
+	/* background-position-x: center;
 	background-position-y: center;
 	background-size: cover;
 	background-attachment: scroll;
@@ -59,8 +63,8 @@
 	background-position: center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover
+	-o-background-size: cover; */
+	background-size: cover;
 }
 
 .h2, h2 {
@@ -93,6 +97,8 @@
 /* ABOUT */
 
 #about {
+    padding: 80px;
+    height: 100vh;
     padding-bottom: 0;
     background-color: #fff1e6;
 }
@@ -112,6 +118,8 @@
 /* Skills */
 
 #skills{
+    padding: 80px;
+    height: 100vh;
     background-color: rgb(69, 123, 157);
 }
 
@@ -142,6 +150,8 @@
 /* Portfolio */
 
 #portfolio{
+    padding: 80px;
+    height: 100vh;
   background-color: #fff1e6;  
 }
 
@@ -177,6 +187,8 @@
 /* Contact */
 
 #contact{
+    padding: 80px;
+    height: 100vh;
     background-color: rgb(69, 123, 157);
 }
 
