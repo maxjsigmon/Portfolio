@@ -9,49 +9,74 @@ body {
     width: 100%;
 }
 
-.navbar-brand {
+/* NavBar */
+
+#mainNav .navbar-brand {
     font-size: 33px;
     font-family: 'Quicksand', sans-serif;
-    color: #02dab6;
-    padding-top:23px;
-    
+    color: #2e2e2e;;
+    padding-top:21px;
+    padding-left: 110px;
+    z-index: 100%;
+    overflow: hidden;
+    background: linear-gradient(to right, #2e2e2e,  #2e2e2e 50%, #fff1e6 50%  );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
 }
 
-.navbar-brand:hover{
-    color: #dcd7d3
+#mainNav .navbar-brand:hover{
+    background-position: 0 100%;
 }
 
-.navbar-nav {
+#myNavbar ul {
     list-style-type: none;
     display: flex;
     float: right;
-    padding-top: 25px;
+    padding-top: 15px;
+    
 }
 
-.navbar-nav>li>a {
+#myNavbar li>a {
     color: #fff1e6;
     padding: 1rem;
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    background: linear-gradient(to right, #2e2e2e,  #2e2e2e 50%, #fff1e6 50%  );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
 }
 
-.navbar-nav>li>a:hover{
-    color: #02dab6;
-    text-decoration: none;
+#myNavbar .navbar-nav>li>a:hover{
+    background-position: 0 100%;
 }
 
 #mainNav{
     position: fixed; 
-    background-color:rgb(69, 123, 157);
+    background-color:#457b9d;
     width: 100%;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
     z-index: 100;
+    border:rgb(69, 123, 157)
 }
+
+/* Masthead */
 
 #masthead {
 	height: 100vh;
 	background: linear-gradient( rgba(69, 123, 157, 0.9), rgba(69, 123, 157, 0.9)), url(../Portfolio/PortfolioAssets/mountain.jpg);
-	/* background-position-x: center;
+	background-position-x: center;
 	background-position-y: center;
 	background-size: cover;
 	background-attachment: scroll;
@@ -63,7 +88,7 @@ body {
 	background-position: center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover; */
+	-o-background-size: cover;
 	background-size: cover;
 }
 
@@ -82,7 +107,7 @@ body {
 }
 
 #masthead .container .section-heading .accent {
-    color: #00a896;
+    color: #2e2e2e;;
 }
 
 #masthead .intro-text {
@@ -97,7 +122,7 @@ body {
 /* ABOUT */
 
 #about {
-    padding: 80px;
+    padding-top: 80px;
     height: 100vh;
     padding-bottom: 0;
     background-color: #fff1e6;
@@ -105,7 +130,7 @@ body {
 
 #about .container .section-heading {
 	font-size: 4em;
-	color: #00a896;
+	color: #2e2e2e;
 	padding-bottom: 15px;
     margin-bottom: 0;
 }
@@ -118,9 +143,10 @@ body {
 /* Skills */
 
 #skills{
-    padding: 80px;
+    padding-top: 80px;
     height: 100vh;
-    background-color: rgb(69, 123, 157);
+    padding-bottom: 0;
+    background-color: #1d3557;
 }
 
 #skills .container .section-heading{
@@ -150,14 +176,15 @@ body {
 /* Portfolio */
 
 #portfolio{
-    padding: 80px;
+    padding-top: 80px;
     height: 100vh;
+    padding-bottom: 0;
   background-color: #fff1e6;  
 }
 
 #portfolio .container .section-heading{
     font-size: 4em;
-	color: #00a896;
+	color: #2e2e2e;;
 	padding-bottom: 15px;
     margin-bottom: 0;
 }
@@ -187,9 +214,10 @@ body {
 /* Contact */
 
 #contact{
-    padding: 80px;
+    padding-top: 80px;
     height: 100vh;
-    background-color: rgb(69, 123, 157);
+    padding-bottom: 0;
+    background-color: #1d3557;
 }
 
 #contact .container .section-heading{
@@ -201,12 +229,14 @@ body {
 }
 
 .resume-file{
-    text-align: center;
+    text-align: left;
+
     
 }
 .resume-file a h3{
     color:#fff1e6;
     font-family: 'Quicksand', sans-serif;
+    padding-bottom: 8px;
     
 }
 
@@ -214,4 +244,17 @@ body {
     text-align: center;
     color:#fff1e6;
     font-family: 'Quicksand', sans-serif;
+}
+
+#contactForm{
+    padding-top: 30px;
+}
+
+.form-group input.form-control {
+height: auto;
+}
+
+footer {
+    background-color: #1d3557;
+    padding-bottom: 5px;
 }
