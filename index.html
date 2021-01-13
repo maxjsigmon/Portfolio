@@ -45,15 +45,19 @@
     <nav class="navbar navbar-inverse" id="mainNav">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>                        
             </button>
             <a class="navbar-brand js-scroll-trigger" href="#page-top">Max Sigmon</a>
+            
+
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
+              <li><a href="https://www.linkedin.com/in/maxsigmon"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/maxjsigmon"><i class="fab fa-github"></i></a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#skills">Skills</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
@@ -102,6 +106,7 @@
             </div>
         </div>
 
+    <!-- Skills -->
     </section>
     <section id="skills">
         <div class="container">
@@ -110,40 +115,88 @@
                     <h2 class="section-heading text-uppercase">Skills</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 skills-item">
-                    <div class="skills-image">
-                        <img class="img-fluid" src="../Portfolio/PortfolioAssets/csharp.png">
-                    </div>
-                    <div class="skills-caption">
-                        <h4>C#</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 skills-item">
-                    <div class="skills-image">
-                        <img class="img-fluid" src="../Portfolio/PortfolioAssets/html.png">
-                    </div>
-                    <div class="skills-caption">
-                        <h4>HTML</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 skills-item">
-                    <div class="skills-image">
-                        <img class="img-fluid" src="../Portfolio/PortfolioAssets/css.png">
-                    </div>
-                    <div class="skills-caption">
-                        <h4>CSS</h4>
-                    </div>
-                </div>
-            </div>
         </div>
+        <div class="container-fluid">
+			<div class="row text-center">
+				<div class="col-md-4 odd align-items-center">
+					<i class="fa fa-code"></i>
+					<h3>ASP .NET MVC</h3>
+				</div>
+
+				<div class="col-md-4 even align-items-center">
+					<i class="fa fa-users"></i>
+					<h3>Agile</h3>
+				</div>
+
+				<div class="col-md-4 odd align-items-center">
+					<i class="fa fa-html5"></i>
+					<h3>HTML5</h3>
+				</div>
+			</div>
+
+			<div class="row text-center align-items-center">
+				<div class="col-md-4 even">
+					<i class="fa fa-css3"></i>
+					<h3>CSS3 / Bootstrap </h3>
+				</div>
+
+				<div class="col-md-4 odd align-items-center">
+					<i class="fa fa-database"></i>
+					<h3>SQL</h3>
+				</div>
+
+				<div class="col-md-4 even align-items-center">
+					<i class="fa fa-github"></i>
+					<h3>Git</h3>
+                </div>
+			</div>
+		</div>
     </section>
 
+    <!-- Portfolio -->
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-md-6">
                     <h2 class="section-heading text-uppercase">Portfolio</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-image">
+                        <img class="img-fluid" src="PortfolioAssets/DIPR.png">
+                    </div>
+                    <div class="portfolio-caption">
+                        <a href="https://github.com/maxjsigmon/DIPR">
+                            <h4>DIPR MVC Project</h4>
+                        </a>
+                        <p>DIPR was a project where I was able to implement all the skills I have learned into one application. DIPR is an application for parents of newborns to track feedings, sleep and diapers all in one place.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-image">
+                        <img class="img-fluid" src="PortfolioAssets/SNZY.png">
+                    </div>
+                    <div class="portfolio-caption">
+                        <a href="https://github.com/maxjsigmon/SNZY">
+                            <h4>SNZY Stock Market Project</h4>
+                        </a>
+                        <p>SNZY was group project where my team and I were able to apply Agile methodology into single application. We implemented an outside Stock API to get real-time financial data to the console for the user. </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="PortfolioAssets/CarConsole.PNG">
+                    </div>
+                    <div class="portfolio-caption">
+                        <a href="https://github.com/maxjsigmon/GoldBadgeChallenges">
+                            <h4>Car Type Console</h4>
+                        </a>
+                        <p>In this project, using C#, I was able to organize different type of cars into separate lists
+                            and create a console application that a user can add, view, update and delete cars from a
+                            directory. These types of challenges tested me and I'm proud of what I was able to achieve.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -174,31 +227,30 @@
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <div class="portfolio-image">
-                        <img src="PortfolioAssets/CarConsole.PNG">
+                        <img class="img-fluid" src="PortfolioAssets/EN.png">
                     </div>
                     <div class="portfolio-caption">
-                        <a href="https://github.com/maxjsigmon/GoldBadgeChallenges">
-                            <h4>Car Type Console</h4>
+                        <a href="https://github.com/maxjsigmon/ElevenNoteMVC">
+                            <h4>ElevenNote</h4>
                         </a>
-                        <p>In this project, using C#, I was able to organize different type of cars into separate lists
-                            and create a console application that a user can add, view, update and delete cars from a
-                            directory. These types of challenges tested me and I'm proud of what I was able to achieve.
-                        </p>
+                        <p>A simple social media application to get started with making applications in MVC.</p>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
+
+    <!-- Contact -->
+
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <h2 class="section-heading text-uppercase">Contact</h2>
                     <div class="resume-file">
-                        <a href="../Portfolio/PortfolioAssets/Sigmon Resume.pdf">
                             <h3>Thank you for checking out my website and taking the time to get to know me. Please, see
-                                my r&eacute;sum&eacute; and get in contact with me if you'd like to know more.</h3>
-                        </a>
+                                my <a href="../Portfolio/PortfolioAssets/SigmonSDResume.pdf"><b>r&eacute;sum&eacute;</b></a> and get in contact with me if you'd like to know more.</h3>
                     </div>
                 </div>
             </div>
@@ -249,6 +301,8 @@
 
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
         <div class="footer">
             <p>Max Sigmon - 2020</p>
